@@ -1,0 +1,17 @@
+.gradle/
+**/build/
+local.properties
+.idea/
+*.iml
+*.keystore
+*.jks
+*.key
+.env
+.env.*
+*.log
+__pycache__/
+*.pyc
+venv/
+.venv/
+.DS_Store
+Thumbs.db

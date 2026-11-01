@@ -1,0 +1,40 @@
+{
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.netflix.mediaclient",
+    "com.android.vending",
+    "com.world.youcinetv"
+  ],
+  "library_apps": [
+    "com.netflix.mediaclient"
+  ],
+  "columns": 4,
+  "rows_below_dock": 0,
+  "fill_dock": false,
+  "background_color": "#02040A",
+  "wallpaper": false,
+  "wallpaper_dim": 0,
+  "wallpaper_rotation_minutes": 0,
+  "wallpaper_true_color": true,
+  "cinematic_home": true,
+  "cinematic_art": 0,
+  "cinematic_scrim": 30,
+  "cinematic_dots": false,
+  "dock_glass": true,
+  "dock_opacity": 70,
+  "dock_even_padding": false,
+  "uniform_tiles": true,
+  "always_show_names": false,
+  "ambient_glow": true ,
+  "app_glow": true,
+  "glass_style": "glass",
+  "focus_overshoot": false,
+  "reduced_motion": true,
+  "launcher_settings_button": true,
+  "app_library": true,
+  "library_button": true,
+  "show_library_pill": false,
+  "tile_menu": true,
+  "wifi_status_color": true,
+  "galaxy_background": true
+}

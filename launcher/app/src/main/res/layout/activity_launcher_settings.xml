@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:paddingLeft="36dp" android:paddingRight="36dp" android:paddingTop="28dp" android:paddingBottom="18dp" android:background="@drawable/settings_screen_bg">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Configurações do launcher" android:textColor="#F6F8FC" android:textSize="40sp" android:fontFamily="sans-serif-medium"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Deixe a tela inicial do seu jeito" android:textColor="#B9C6D8" android:textSize="22sp"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_marginTop="24dp" android:orientation="horizontal" android:baselineAligned="false">
+<ScrollView android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:layout_marginRight="9dp" android:background="@drawable/settings_panel_bg" android:fillViewport="true" android:scrollbars="none">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="22dp" android:orientation="vertical">
+<TextView style="@style/MenuHeading" android:text="Organização" android:drawableStart="@drawable/ic_menu_organization"/>
+<TextView android:id="@+id/reorderChoice" style="@style/MenuRow" android:text="Reordenar apps  ›" android:layout_marginTop="24dp"/>
+<TextView style="@style/MenuLabel" android:text="Apps por fileira"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp"><TextView android:id="@+id/columns4" style="@style/MenuNumber" android:text="4"/><TextView android:id="@+id/columns5" style="@style/MenuNumber" android:text="5"/><TextView android:id="@+id/columns6" style="@style/MenuNumber" android:text="6"/><TextView android:id="@+id/columns7" style="@style/MenuNumber" android:text="7"/></LinearLayout>
+<TextView style="@style/MenuLabel" android:text="Fileiras abaixo do dock"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp"><TextView android:id="@+id/rows0" style="@style/MenuNumber" android:text="0"/><TextView android:id="@+id/rows1" style="@style/MenuNumber" android:text="1"/><TextView android:id="@+id/rows2" style="@style/MenuNumber" android:text="2"/><TextView android:id="@+id/rows3" style="@style/MenuNumber" android:text="3"/></LinearLayout>
+<TextView android:layout_width="match_parent" android:layout_height="42dp"/>
+<TextView android:id="@+id/moreChoice" style="@style/MenuRow" android:text="Mais configurações  ›"/><LinearLayout android:id="@+id/moreOptions" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:visibility="gone"><TextView android:id="@+id/weatherChoice" style="@style/MenuRow" android:text="Clima  ›" />
+<TextView android:id="@+id/animationsChoice" style="@style/MenuRow" android:text="Animações" />
+<TextView android:id="@+id/advancedChoice" style="@style/MenuRow" android:text="Efeitos avançados" />
+<TextView android:id="@+id/openOnStartChoice" style="@style/MenuRow" android:text="Ao iniciar" android:visibility="gone"/>
+<TextView android:id="@+id/followThemeChoice" style="@style/MenuRow" android:text="Seguir tema" />
+<TextView android:id="@+id/defaultHomeChoice" style="@style/MenuRow" android:text="Tela inicial padrão  ›" />
+<TextView android:id="@+id/tvSettingsChoice" style="@style/MenuRow" android:text="Configurações do Android  ›" /></LinearLayout>
+</LinearLayout></ScrollView>
+<ScrollView android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:background="@drawable/settings_panel_bg" android:fillViewport="true" android:scrollbars="none">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="22dp" android:orientation="vertical">
+<TextView style="@style/MenuHeading" android:text="Personalização" android:drawableStart="@drawable/ic_menu_palette"/>
+<TextView style="@style/MenuLabel" android:text="Opacidade do dock"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp"><TextView android:id="@+id/dock100" style="@style/MenuNumber" android:text="100%"/><TextView android:id="@+id/dock70" style="@style/MenuNumber" android:text="70%"/><TextView android:id="@+id/dock50" style="@style/MenuNumber" android:text="50%"/><TextView android:id="@+id/dock30" style="@style/MenuNumber" android:text="30%"/></LinearLayout>
+<TextView android:id="@+id/wallpaperChoice" style="@style/MenuRow" android:text="Papel de parede" android:layout_height="82dp" android:layout_marginTop="16dp" android:drawablePadding="18dp"/>
+<TextView android:id="@+id/rotationChoice" style="@style/MenuRow" android:text="Troca automática" android:layout_height="54dp" android:background="@drawable/settings_switch_row" android:drawableEnd="@drawable/settings_toggle" android:layout_marginTop="12dp"/>
+<View android:layout_width="match_parent" android:layout_height="1dp" android:background="#263748"/>
+<TextView android:id="@+id/galaxyChoice" style="@style/MenuRow" android:text="Fundo Galaxy" android:layout_height="54dp" android:background="@drawable/settings_switch_row" android:drawableEnd="@drawable/settings_toggle"/>
+</LinearLayout></ScrollView>
+</LinearLayout>
+<LinearLayout android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginTop="14dp" android:gravity="center_vertical">
+<TextView android:id="@+id/backChoice" android:layout_width="wrap_content" android:layout_height="match_parent" android:gravity="center_vertical" android:text="‹  Voltar" android:textSize="18sp" android:textColor="#BBC8DB" android:focusable="true" android:clickable="true" android:background="@drawable/settings_switch_row" android:paddingHorizontal="12dp"/>
+<Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="OK   Selecionar" android:textSize="18sp" android:textColor="#BBC8DB"/>
+</LinearLayout></LinearLayout>
